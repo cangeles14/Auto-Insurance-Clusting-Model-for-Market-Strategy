@@ -15,6 +15,10 @@ Using a clustering machine learning model, I created a classification algorithm 
 
 ## Model Performance & Metrics
 
+## Presentation
+
+* [Presentation](https://github.com/cangeles14/Auto-Insurance-Clusting-Model-for-Market-Strategy/blob/master/Auto%20Insurance%20Clustering%20Model.pdf)
+
 ## Built With
 
 * [Python](https://docs.python.org/3/) - The programming language used
