@@ -1,16 +1,11 @@
-# Auto Insurance Market Strategy with Clustering Algorithm # Ironhack
+# Auto Insurance Market Strategy Optimization with Clustering Algorithm
 Using a clustering machine learning model, I created a classification algorithm that accurately targets clients, increasing the strength of a market strategy
 
 ## Define The Problem
 
-
-
 ## Roadmap
 
-
 ## Understand the Data
-
-
 
 ## Exploratory Analysis
 
