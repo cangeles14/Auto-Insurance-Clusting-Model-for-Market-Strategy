@@ -42,11 +42,11 @@ By looking at our data distributions, we can see which variables have outliers o
 
 Scaling our data allows us to keep the same distribution of our dataset while allowing us to compare two variables that are seeminly unrelated.
 
-<img src="https://github.com/cangeles14/Auto-Insurance-Clusting-Model-for-Market-Strategy/blob/master/visualizations/DataScaling.png">
+<img src="https://github.com/cangeles14/Auto-Insurance-Clusting-Model-for-Market-Strategy/blob/master/visualizations/DataScaling.png" width="50%" height="75%">
 
-<img src="https://github.com/cangeles14/Auto-Insurance-Clusting-Model-for-Market-Strategy/blob/master/visualizations/Customer%20Lifetime%20Value%20Distribution.png">
+<img src="https://github.com/cangeles14/Auto-Insurance-Clusting-Model-for-Market-Strategy/blob/master/visualizations/Customer%20Lifetime%20Value%20Distribution.png" width="50%" height="75%">
 
-<img src="https://github.com/cangeles14/Auto-Insurance-Clusting-Model-for-Market-Strategy/blob/master/visualizations/Income%20Distribution.png">
+<img src="https://github.com/cangeles14/Auto-Insurance-Clusting-Model-for-Market-Strategy/blob/master/visualizations/Income%20Distribution.png" width="50%" height="75%">
 
 ## Building the Model
 
@@ -63,9 +63,38 @@ The three clustering methods I will perform are K Means Clustering, DB Scan Clus
 
 * [Agglomerative](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.AgglomerativeClustering.html) - Also called hierarchical clustering, a bottom-up clustering approach where each observation is assigned its own cluster and by calculating the similarity between clusters, merges them
 
-
-
 ## Model Performance & Metrics
+
+Optimization allows our model to perform at its maximum to classify clusters. I will go over the models and some of the methods I used at optimizing them and analyzing their metrics.
+
+Metrics:
+
+* [Silhouette Score](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html) - Silhouette Score is a classification metrics that measures how similar a datapoint is to its own cluster compared to all clusters
+
+* [Dunn Index]() - Dunn Index uses cluster size and intercluster distances to evaluate clustering algorithms
+
+* [Davies-Bouldin Index](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.davies_bouldin_score.html) - Davies-Bouldin Index uses the ratio of parameters within the cluster to the parameters between clusters to optimize clustering algorithms 
+
+K Means is an algorithm that tries to partition the dataset into distinct, non-overlapping groups or clusters. After running the model we can plot the epicenters of our clusters. This helps tell us if our clusters are distinct or not.
+
+<img src="https://github.com/cangeles14/Auto-Insurance-Clusting-Model-for-Market-Strategy/blob/master/visualizations/KMeansClusteringCenters.png" width="50%" height="75%">
+
+K Means Elbow is a visualization method that computes the optimal number of clusters for a K Means model within the ranges specified
+
+<img src="https://github.com/cangeles14/Auto-Insurance-Clusting-Model-for-Market-Strategy/blob/master/visualizations/KElbowVis.png">
+
+Looping through the metrics for DB Scan and Agglomerative clustering models, we can find the optimal parameters for each model. 
+
+<img src="https://github.com/cangeles14/Auto-Insurance-Clusting-Model-for-Market-Strategy/blob/master/visualizations/DBAggloOptimization.png">
+
+## Visualization of Clusters
+
+One of the most important things when creating a clustering model is to actually visualize your clusters with your dataset. It's almost impossible to tell if your clustering algorithm is comparively good simply on metric scores.
+
+<img src="https://github.com/cangeles14/Auto-Insurance-Clusting-Model-for-Market-Strategy/blob/master/visualizations/Monthly%20Premium%20vs%20Total%20Claim.png" width="50%" height="75%">
+
+<img src="https://github.com/cangeles14/Auto-Insurance-Clusting-Model-for-Market-Strategy/blob/master/visualizations/Income%20vs%20Monthly%20Premium.png" width="50%" height="75%">
+
 
 ## Presentation
 
