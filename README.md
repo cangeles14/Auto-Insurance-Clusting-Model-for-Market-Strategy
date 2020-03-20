@@ -139,7 +139,7 @@ Train/Test Split separates our data into training and test sets so we can build 
 
 I then ran every model in the list and compared the accuracy of each model to choose which performed the best based on their accuracy.
 
-<img src="https://github.com/cangeles14/Auto-Insurance-Clusting-Model-for-Market-Strategy/blob/master/visualizations/predictionmodelresults.png">
+<img src="https://github.com/cangeles14/Auto-Insurance-Clusting-Model-for-Market-Strategy/blob/master/visualizations/predictionmodelresults.png" width="30%" height="30%">
 
 ## Presentation
 
