@@ -91,10 +91,42 @@ Looping through the metrics for DB Scan and Agglomerative clustering models, we 
 
 One of the most important things when creating a clustering model is to actually visualize your clusters with your dataset. It's almost impossible to tell if your clustering algorithm is comparively good simply on metric scores.
 
-<img src="https://github.com/cangeles14/Auto-Insurance-Clusting-Model-for-Market-Strategy/blob/master/visualizations/Monthly%20Premium%20vs%20Total%20Claim.png" width="50%" height="75%">
+Here is an image of our clustering model clustering customers and plotting that data with customers total claim amount  vs monthly payments. As we can see, our clusters are all distinct from one another and very few points overlap. This is a good visualization of clustering customers. 
+
+<img src="https://github.com/cangeles14/Auto-Insurance-Clusting-Model-for-Market-Strategy/blob/master/visualizations/totalclaimvsmonthlycluster.png" width="50%" height="75%">
+
+Next we can take a look at how our clustering algorithm is clustering customers when we look at customers income and their monthly premium payment amount. We can see that the clustering algorithm fairs pretty well in this case. One thing to note is that we can see many datapoints with simply 0$ in income. This could be interfering with our model, and if we wanted we could rerun the model again and simply remove all customers who have 0$ income. This could allow the model to cluster without such large outliers in the data.
 
 <img src="https://github.com/cangeles14/Auto-Insurance-Clusting-Model-for-Market-Strategy/blob/master/visualizations/Income%20vs%20Monthly%20Premium.png" width="50%" height="75%">
 
+## Clustering Insights & Marketing Strategy
+
+Next we want to utilize this model to look at trends within our clusters. This will allow us to optimize or produce a strong marketing campaign. I will demonstrate how creating a clustering algorithm will bring forth new insights on our customers and data that we would have notherwise not known of. Creating specific clusters for specific types of customers, we can more accurately target our customer and audience.
+
+First I will take a look at our dataset and how we would normally classify and target those based on income and education.
+
+<img src="https://github.com/cangeles14/Auto-Insurance-Clusting-Model-for-Market-Strategy/blob/master/visualizations/AvgIncomeVsEducationData.png" width="50%" height="75%">
+
+In the above image you can see that as higher education is reached, there is an increase in the customers income. This is to be expected. Higher education usually means higher paying jobs.
+
+<img src="https://github.com/cangeles14/Auto-Insurance-Clusting-Model-for-Market-Strategy/blob/master/visualizations/AvgIncomeVsEducationCluster2.png" width="50%" height="75%">
+
+In this image, I looked at only one cluster, and examined these customers income and education. It looks very different. You can see that the same trend does not hold true. The average income is almost the same for all education levels. This tells us that if we were to target simply on education alone, we wouldn't be very accurate in our assumptions.
+
+Next I will take a look at how my clustering model classifies customers based on thier monthly premium payments and the policy type they have.
+
+<img src="https://github.com/cangeles14/Auto-Insurance-Clusting-Model-for-Market-Strategy/blob/master/visualizations/AvgMonthlyByPolicyData.png" width="50%" height="75%">
+
+The above image is classification without utilizing the clustering algorithm. You can see that the average monthly payment is the same for all customers with differnent policy types. A marketing campaign targeting customers based on this information would simply target all customers.
+
+<img src="https://github.com/cangeles14/Auto-Insurance-Clusting-Model-for-Market-Strategy/blob/master/visualizations/AvgMonthlyByPolicyClusters.png" width="50%" height="75%">
+
+Next, if we take a look at the same data but this time clustering our customers, we can see that we infact have different groups of customers that have different monthly payments for each policy type. This allows us to target customers with those parameters. 
+
+
+
+
+# Prediction Model
 
 ## Presentation
 
