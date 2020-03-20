@@ -123,10 +123,23 @@ The above image is classification without utilizing the clustering algorithm. Yo
 
 Next, if we take a look at the same data but this time clustering our customers, we can see that we infact have different groups of customers that have different monthly payments for each policy type. This allows us to target customers with those parameters. 
 
-
-
-
 # Prediction Model
+
+- Add our clustering algorithm back to our data and group customers by our new clusters
+- Split our data into a training set and test set to create new model
+- Test various model predictions 
+- Run the best model and report on the accuracy of the model to predict new customers
+
+
+Lastly, I took a look at how we can utilize this clustering model, combined with a prediction model, to target new incoming customers or predict and classify new customers that just join or prehaps are looking to join. This can not only strengthen our current marketing campaign, but also allow for onboarding of new customers.
+
+Train/Test Split separates our data into training and test sets so we can build our prediction model. Next I create a list of models I wanted to test to see which prediction model had the highest accuracy.
+
+<img src="https://github.com/cangeles14/Auto-Insurance-Clusting-Model-for-Market-Strategy/blob/master/visualizations/predictionmodelcode.png">
+
+I then ran every model in the list and compared the accuracy of each model to choose which performed the best based on their accuracy.
+
+<img src="https://github.com/cangeles14/Auto-Insurance-Clusting-Model-for-Market-Strategy/blob/master/visualizations/predictionmodelresults.png">
 
 ## Presentation
 
